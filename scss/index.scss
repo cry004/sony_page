@@ -1,0 +1,263 @@
+/* Variable*/
+$full-width: 100%;
+$buttons-top-padding: $full-width / 6 * 0.2;
+
+/* CSS Mobile Reset */
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+p img {
+  float: left;
+  margin: 0 10px 5px 0;
+  padding: 0;
+}
+img {
+  border: 0;
+  width: $full-width;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  position: relative;
+}
+.applestore,
+.googleplay {
+  position: absolute;
+  cursor: pointer;
+  & :hover {
+    opacity: 0.9;
+  }
+}
+@media screen and (min-width: 961px) {
+  main[data-show="pc"] {
+    width: $full-width;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    & > div {
+      width: $full-width;
+      position: relative;
+      font-size: 0;
+    }
+    .content {
+      width: $full-width * 0.57;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      //border: 1px solid #000;
+    }
+    .block1 {
+      .text {
+        width: 37%;
+        position: absolute;
+        left: 3%;
+        top: 30%;
+      }
+      .s1_t1 {
+        width: 100%;
+      }
+      .qrc {
+        width: 37%;
+        position: absolute;
+        left: 1%;
+        top: 118%;
+      }
+      .applestore {
+        width: 51.1%;
+        right: 0%;
+        top: 118%;
+      }
+      .googleplay {
+        width: 51.1%;
+        right: 0%;
+        top: 170%;
+      }
+      .hand {
+        width: 56%;
+        position: absolute;
+        top: 7%;
+        right: -9%;
+      }
+      header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        .logo {
+          width: 18%;
+          position: absolute;
+          left: -12%;
+          top: 15px;
+          cursor: pointer;
+        }
+        .btn {
+          width: 10.6%;
+          position: absolute;
+          right: -12%;
+          top: 15px;
+          cursor: pointer;
+          & :hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    .block2 {
+      .s2_t1 {
+        width: 60%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .phone_s {
+        width: 22.3%;
+        position: absolute;
+        top: 17%;
+        right: -2%;
+      }
+      .s2_t2 {
+        width: 78.5%;
+        position: absolute;
+        top: 46%;
+        left: 9%;
+      }
+    }
+    .block3 {
+      .s3_t1 {
+        width: 105.2%;
+        position: absolute;
+        top: 5%;
+        left: -2.6%;
+      }
+      .download {
+        width: 52%;
+        position: absolute;
+        top: 42%;
+        left: 24%;
+      }
+      .s4_t1 {
+        width: 100%;
+      }
+      .applestore {
+        width: 25%;
+        left: 25%;
+        top: 58%;
+      }
+      .googleplay {
+        width: 25%;
+        left: 53%;
+        top: 58%;
+      }
+      .phone {
+        width: 79%;
+        position: absolute;
+        top: 56%;
+        left: 10%;
+      }
+    }
+    footer {
+      width: 100%;
+      background: #333;
+      height: 68px;
+      border-top: 22px solid #7f191e;
+      font-size: 2vmin;
+      color: #fff;
+      text-align: center;
+      line-height: 68px;
+    }
+  }
+  main[data-show="sp"] {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  main[data-show="pc"] {
+    display: none;
+  }
+  main[data-show="sp"] {
+    & > div {
+      position: relative;
+      font-size: 0;
+    }
+    .block1 {
+      .applestore,
+      .googleplay {
+        width: 37%;
+        bottom: 17%;
+      }
+      .applestore {
+        left: 10.2%;
+      }
+      .googleplay {
+        right: 10.2%;
+      }
+      header {
+        .logo {
+          width: 34%;
+          position: absolute;
+          left: 5%;
+          top: 2.5%;
+          cursor: pointer;
+        }
+        .btn {
+          width: 21%;
+          position: absolute;
+          right: 5%;
+          top: 2%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .block4 {
+    .applestore,
+    .googleplay {
+      width: 40.5%;
+      bottom: 16%;
+    }
+    .applestore {
+      left: 6.5%;
+    }
+    .googleplay {
+      right: 6.5%;
+    }
+  }
+}
